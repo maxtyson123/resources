@@ -5,16 +5,37 @@
     <title>.Nav{Title=Loading}</title>
 </head>
 <body>
-<h1>Here Are Some Of My Resources
-    <nav>
-        <ul>
-            <li><a href="Files/WT.zip" download="">Website Template</a></li>
-            <li><a href="Files/Max's_Text_Styles.docx" download="">T.E.S Styels Template</a></li>
-            <li><a href="Files/Border Template.dtd" download="">Border Template</a></li>
-            
-            
-        </ul>
-    </nav>
-  
+      <h1>Login</h1>
+<form name="login"> 
+
+Username
+    <br>
+    <input type="text" name="userid"/>
+    <br>
+    <br>
+Password
+    <br>
+    <input type="password" name="pswrd"/>
+    <br>
+    <br>
+<input type="button" onclick="check(this.form)" value="Login"/>
+    <br>
+    <br>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)
+    {
+
+ if(form.userid.value == "Admin" && form.pswrd.value == "password")
+  {
+    window.open('7861872638876__.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
 </body>
 </html>
